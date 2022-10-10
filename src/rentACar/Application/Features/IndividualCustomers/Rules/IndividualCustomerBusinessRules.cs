@@ -1,11 +1,12 @@
 using Application.Services.Repositories;
+using Core.Application.Rules;
 using Core.CrossCuttingConcerns.Exceptions;
 using Core.Persistence.Paging;
 using Domain.Entities;
 
 namespace Application.Features.IndividualCustomers.Rules;
 
-public class IndividualCustomerBusinessRules
+public class IndividualCustomerBusinessRules : BaseBusinessRules
 {
     private readonly IIndividualCustomerRepository _individualCustomerRepository;
 

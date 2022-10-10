@@ -1,10 +1,11 @@
 using Application.Services.Repositories;
+using Core.Application.Rules;
 using Core.CrossCuttingConcerns.Exceptions;
 using Domain.Entities;
 
 namespace Application.Features.FindeksCreditRates.Rules;
 
-public class FindeksCreditRateBusinessRules
+public class FindeksCreditRateBusinessRules : BaseBusinessRules
 {
     private readonly IFindeksCreditRateRepository _findeksCreditRateRepository;
 

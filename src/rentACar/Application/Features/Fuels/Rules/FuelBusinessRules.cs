@@ -1,11 +1,12 @@
 ﻿using Application.Services.Repositories;
+using Core.Application.Rules;
 using Core.CrossCuttingConcerns.Exceptions;
 using Core.Persistence.Paging;
 using Domain.Entities;
 
 namespace Application.Features.Fuels.Rules;
 
-public class FuelBusinessRules
+public class FuelBusinessRules : BaseBusinessRules
 {
     private readonly IFuelRepository _fuelRepository;
 

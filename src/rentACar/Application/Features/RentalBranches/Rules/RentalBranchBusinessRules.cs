@@ -1,10 +1,11 @@
 using Application.Services.Repositories;
+using Core.Application.Rules;
 using Core.CrossCuttingConcerns.Exceptions;
 using Domain.Entities;
 
 namespace Application.Features.RentalBranches.Rules;
 
-public class RentalBranchBusinessRules
+public class RentalBranchBusinessRules : BaseBusinessRules
 {
     private readonly IRentalBranchRepository _rentalBranchRepository;
 

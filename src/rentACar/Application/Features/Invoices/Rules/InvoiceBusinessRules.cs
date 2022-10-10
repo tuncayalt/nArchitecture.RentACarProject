@@ -1,10 +1,11 @@
 using Application.Services.Repositories;
+using Core.Application.Rules;
 using Core.CrossCuttingConcerns.Exceptions;
 using Domain.Entities;
 
 namespace Application.Features.Invoices.Rules;
 
-public class InvoiceBusinessRules
+public class InvoiceBusinessRules : BaseBusinessRules
 {
     private readonly IInvoiceRepository _invoiceRepository;
 

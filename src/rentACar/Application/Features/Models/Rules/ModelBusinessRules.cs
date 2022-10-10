@@ -1,10 +1,11 @@
 ﻿using Application.Services.Repositories;
+using Core.Application.Rules;
 using Core.CrossCuttingConcerns.Exceptions;
 using Domain.Entities;
 
 namespace Application.Features.Models.Rules;
 
-public class ModelBusinessRules
+public class ModelBusinessRules : BaseBusinessRules
 {
     private readonly IModelRepository _modelRepository;
 

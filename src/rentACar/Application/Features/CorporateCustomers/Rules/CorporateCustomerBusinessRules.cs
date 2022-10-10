@@ -1,11 +1,12 @@
 using Application.Services.Repositories;
+using Core.Application.Rules;
 using Core.CrossCuttingConcerns.Exceptions;
 using Core.Persistence.Paging;
 using Domain.Entities;
 
 namespace Application.Features.CorporateCustomers.Rules;
 
-public class CorporateCustomerBusinessRules
+public class CorporateCustomerBusinessRules : BaseBusinessRules
 {
     private readonly ICorporateCustomerRepository _corporateCustomerRepository;
 
